@@ -1,0 +1,7 @@
+username: user
+password: changeme
+
+shell: /bin/bash
+
+git_user_name: user
+git_user_email: example@example.com

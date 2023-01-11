@@ -1,0 +1,6 @@
+- name: Disable ssh password auth
+  lineinfile:
+    dest: /etc/ssh/sshd_config
+    regexp: "^#PasswordAuthentication yes"
+    line: "PasswordAuthentication no"
+  notify: Restart ssh daemon

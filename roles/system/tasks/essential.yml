@@ -1,0 +1,14 @@
+- name: Update packages
+  apt:
+    update_cache: yes
+    upgrade: yes
+
+- name: Install essential packages
+  apt:
+    pkg:
+      - vim
+      - neofetch
+      - htop
+      - tmux
+      - speedtest-cli
+    state: latest
